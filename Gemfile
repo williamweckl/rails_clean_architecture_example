@@ -62,3 +62,9 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Modules
+gem "core", path: "modules/core"
+
+# Domains
+gem "billing", path: "domains/billing"
