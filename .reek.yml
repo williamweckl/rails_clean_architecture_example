@@ -1,0 +1,146 @@
+detectors:
+  IrresponsibleModule:
+    enabled: false
+  MissingSafeMethod:
+    enabled: false
+
+directories:
+  # Working with Rails
+  "app/clients":
+    FeatureEnvy:
+      enabled: false
+    UtilityFunction:
+      enabled: false
+    TooManyStatements:
+      max_statements: 12
+    Attribute:
+      enabled: false
+    NestedIterators:
+      max_allowed_nesting: 2
+    UnusedPrivateMethod:
+      enabled: false
+    InstanceVariableAssumption:
+      enabled: false
+  "app/controllers":
+    TooManyStatements:
+      max_statements: 10
+    NestedIterators:
+      max_allowed_nesting: 2
+    UnusedPrivateMethod:
+      enabled: false
+    InstanceVariableAssumption:
+      enabled: false
+  "app/helpers":
+    UtilityFunction:
+      enabled: false
+    FeatureEnvy:
+      enabled: false
+  "app/mailers":
+    InstanceVariableAssumption:
+      enabled: false
+  "app/models":
+    Attribute:
+      enabled: false
+  "app/presenters":
+    FeatureEnvy:
+      enabled: false
+    UtilityFunction:
+      enabled: false
+  "app/models/reports":
+    FeatureEnvy:
+      enabled: false
+    UtilityFunction:
+      enabled: false
+  "app/jobs":
+    FeatureEnvy:
+      enabled: false
+    UtilityFunction:
+      enabled: false
+    TooManyStatements:
+      max_statements: 12
+    Attribute:
+      enabled: false
+    NestedIterators:
+      max_allowed_nesting: 2
+    UnusedPrivateMethod:
+      enabled: false
+    InstanceVariableAssumption:
+      enabled: false
+  "app/services":
+    FeatureEnvy:
+      enabled: false
+    UtilityFunction:
+      enabled: false
+    TooManyStatements:
+      max_statements: 12
+    Attribute:
+      enabled: false
+    NestedIterators:
+      max_allowed_nesting: 2
+    InstanceVariableAssumption:
+      enabled: false
+    DataClump:
+      enabled: false
+  "app/operation/controllers":
+    TooManyStatements:
+      max_statements: 10
+    NestedIterators:
+      max_allowed_nesting: 2
+    UnusedPrivateMethod:
+      enabled: true
+    InstanceVariableAssumption:
+      enabled: false
+  "app/operation/wrappers":
+    UtilityFunction:
+      enabled: false
+    FeatureEnvy:
+      enabled: false
+    DataClump:
+      enabled: false
+  "lib/utils":
+    FeatureEnvy:
+      enabled: false
+    UtilityFunction:
+      enabled: false
+  "test/mailers/preview":
+    FeatureEnvy:
+      enabled: false
+    UtilityFunction:
+      enabled: false
+  # Working with clean architecture
+  "/entities":
+    Attribute:
+      enabled: false
+  "/interactors":
+    FeatureEnvy:
+      enabled: false
+    UtilityFunction:
+      enabled: false
+    LongParameterList:
+      enabled: false
+
+# Excluding directories
+## Directories below will not be scanned at all
+exclude_paths:
+  - bin
+  - coverage
+  - db
+  - doc
+  - docker-images
+  - frontend
+  - log
+  - node_modules
+  - public
+  - script
+  - tmp
+  - vendor
+  - modules/billing/db
+  - modules/core/db
+  - modules/customer_relationship/db
+  - modules/finance/db
+  - modules/notifications/db
+  - modules/offers/db
+  - modules/payments/db
+  - modules/subscription_management/db
+  - modules/taxes/db
+

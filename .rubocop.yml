@@ -1,0 +1,108 @@
+require: rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - '**/*.gemspec'
+    - '**/bin/**/*'
+    - '**/dummy/**/*'
+    - '**/node_modules/**/*'
+    - '**/log/**/*'
+    - '**/tmp/**/*'
+    - '**/db/migrate/**/*'
+    - '**/Rakefile'
+    - coverage/**/*
+    - db/**/*
+    - doc/**/*
+    - docker-images/**/*
+    - frontend/**/*
+    - public/**/*
+    - script/**/*
+    - vendor/**/*
+  RSpec:
+    Patterns:
+    - '_spec.rb$'
+    - '_test.rb$'
+
+Rails:
+  Enabled: true
+
+Naming/AccessorMethodName:
+  Enabled: false
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: empty_lines_except_namespace
+Layout/EmptyLinesAroundModuleBody:
+  EnforcedStyle: empty_lines_except_namespace
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/AsciiComments:
+  Enabled: true
+Style/Documentation:
+  Enabled: false
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/SymbolArray:
+  Enabled: false
+Style/WordArray:
+  Enabled: false
+Bundler/OrderedGems:
+  Enabled: false
+Metrics/ClassLength:
+  Max: 120
+  Include:
+    - app/services/**/*
+     '**/interactors/**/*'
+Metrics/ClassLength:
+  Max: 100
+  Exclude:
+    - app/services/**/*
+    - '**/interactors/**/*'
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - '**/config/environments/**/*'
+Metrics/MethodLength:
+  Max: 20
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - app/models/concern/**/*
+    - test/**/*
+Metrics/BlockLength:
+  Enabled: false
+  Include:
+    - app/models/concern/**/*
+    - test/**/*
+    - spec/**/*.rb
+Metrics/ParameterLists:
+  Enabled: true
+  Exclude:
+    - '**/interactors/**/*'
+Rails/SkipsModelValidations:
+  Enabled: false
+  Exclude:
+    - test/**/*.rb
+    - spec/**/*.rb
+
+RSpec/ExampleLength:
+  Max: 30
+RSpec/DescribedClass:
+  Enabled: false
+RSpec/MultipleExpectations:
+  Enabled: false
+RSpec/MessageChain:
+  Enabled: false
+RSpec/SingleArgumentMessageChain:
+  Enabled: false
+RSpec/AnyInstance:
+  Enabled: false
+RSpec/MessageSpies:
+  Enabled: false
+RSpec/VerifiedDoubles:
+  Enabled: false
