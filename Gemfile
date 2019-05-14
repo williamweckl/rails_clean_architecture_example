@@ -67,4 +67,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "core", path: "modules/core"
 
 # Domains
-gem "billing", path: "domains/billing"
+gem 'transactions', path: "domains/transactions"

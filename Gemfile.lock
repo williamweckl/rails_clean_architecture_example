@@ -1,7 +1,7 @@
 PATH
-  remote: domains/billing
+  remote: domains/transactions
   specs:
-    billing (0.1.0)
+    transactions (0.1.0)
       rails (~> 5.2.3)
 
 PATH
@@ -224,7 +224,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  billing!
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15)
@@ -241,6 +240,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
+  transactions!
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
