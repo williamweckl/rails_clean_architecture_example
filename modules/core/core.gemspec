@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
 
   # TODO: INCLUIR SÓ AS LIBS DO RAILS NECESSÁRIAS
   spec.add_dependency "rails", "~> 5.2.3"
+  spec.add_dependency "dry-types", ">= 1.0", "< 2.0"
 
   spec.add_development_dependency "sqlite3"
   spec.add_development_dependency "rspec-rails", '~> 3.8'
