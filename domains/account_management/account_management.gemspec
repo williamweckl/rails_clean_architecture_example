@@ -1,12 +1,9 @@
 $:.push File.expand_path("lib", __dir__)
 
-# Maintain your gem's version:
-require "account_management/version"
-
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
   spec.name        = "account_management"
-  spec.version     = AccountManagement::VERSION
+  spec.version     = "0.1.0"
   spec.authors     = ["William Weckl"]
   spec.email       = ["william.weckl@gmail.com"]
   spec.homepage    = "https://app.rdstation.com"
