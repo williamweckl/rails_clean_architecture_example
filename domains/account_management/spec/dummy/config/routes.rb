@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount AccountManagement::Engine => "/account_management"
+  mount Domains::AccountManagement::Engine => "/account_management"
 end

@@ -1,2 +1,2 @@
-AccountManagement::Engine.routes.draw do
+Domains::AccountManagement::Engine.routes.draw do
 end
