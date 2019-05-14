@@ -8,5 +8,6 @@ module Domains::AccountManagement
   end
 end
 
+require_relative "../account_management/entities/account"
 require_relative "../account_management/entities/customer"
 
