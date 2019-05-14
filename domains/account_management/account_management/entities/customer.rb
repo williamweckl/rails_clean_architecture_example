@@ -1,12 +1,4 @@
-
-# TODO: extender de classe genérica
-# TODO: include ActiveModel::Validations e outros ir para classe genérica
-class Domains::AccountManagement::Customer
-
-  include ActiveModel::Model
-  include ActiveModel::Attributes
-  # include ActiveModel::Serialization
-  include ActiveModel::Validations
+class Domains::AccountManagement::Customer < Core::Entity
 
   attribute :id, :integer
   attribute :name, :string
