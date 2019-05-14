@@ -44,5 +44,7 @@ RSpec.describe Domains::AccountManagement::Customer, type: :entity do
     it { expect(customer).to allow_value(nil).for(:id) }
     it { expect(customer).to validate_presence_of(:name) }
     it { expect(customer).to validate_presence_of(:birthdate) }
+
+    it { expect(customer).to validate_length_of(:name).is_at_most(60) }
   end
 end
